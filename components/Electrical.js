@@ -22,7 +22,7 @@ const Construccion = ({ electrical, titulo }) => {
       <div className={styles.contenedor_renovaciones}>
         {electrical.map((entrada) => (
           <div  className={styles.contenedor_bloqueTresImagenes}>
-            <BloqueTresImagenes key={entrada.id} entrada={entrada} />
+            <BloqueTresImagenes key={entrada} entrada={entrada} />
           </div>
         ))}
       </div>
