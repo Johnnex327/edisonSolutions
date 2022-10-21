@@ -47,11 +47,11 @@ export default function Home({ renovacion, construccion, electrical }) {
         </div>
 
         <div>
-          <Renovacion key={renovacion.id} titulo="Interior Renovation" renovacion={renovacion} />
+          <Renovacion key={renovacion._id} titulo="Interior Renovation" renovacion={renovacion} />
 
-          <Construccion key={construccion.id} titulo="Construction" construccion={construccion} />
+          <Construccion key={construccion._id} titulo="Construction" construccion={construccion} />
 
-          <Electrical key={electrical.id} titulo="Electrical" electrical={electrical} />
+          <Electrical key={electrical._id} titulo="Electrical" electrical={electrical} />
         </div>
 
         <div className={styles.fondo3}>
