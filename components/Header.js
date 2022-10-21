@@ -7,36 +7,36 @@ const Header = () => {
     <>
       <header className={styles.header}>
       <div className={styles.logo}>
-      <a href="/">
+      <Link href="/">
         <Image
         width={100} height={60} layout="fixed" src="/img/logo.png"
         />
-      </a>
+      </Link>
       <div className={styles.nombre_empresa}>
-        <a href="/">
+        <Link href="/">
           <h1>Edison Solutions LLC</h1>
-        </a>
+        </Link>
         <p>General Constructor - New York</p>
       </div>
     </div>
         <ul>
           <li>
-            <a href="/">Home</a>
+            <Link href="/">Home</Link>
           </li>
           <li>
-            <a href="about">About</a>
+            <Link href="about">About</Link>
           </li>
           <li>
-            <a href="services">Services</a>
+            <Link href="services">Services</Link>
           </li>
           <li>
-            <a href="#">Portafolio</a>
+            <Link href="#">Portafolio</Link>
           </li>
           <li>
-            <a href="#">Team</a>
+            <Link href="#">Team</Link>
           </li>
           <li>
-            <a href="contact">Contact</a>
+            <Link href="contact">Contact</Link>
           </li>
         </ul>
       </header>

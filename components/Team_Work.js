@@ -1,6 +1,7 @@
 import styles from "../styles/Team.module.css";
 import { React, useEffect } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 /* Libreria de animacion AOS */
 import AOS from "aos";
@@ -32,18 +33,18 @@ const Team = () => {
             <h2>Edison Naranjo</h2>
             <p>CEO</p>
             <div className={styles.contenedor_iconos}>
-              <a href="https://www.facebook.com/Edison-Solutions-LLC-100320772656843" target="blank">
+              <Link href="https://www.facebook.com/Edison-Solutions-LLC-100320772656843" target="blank">
                 <FaFacebook className={`${styles.icono} ${styles.facebook}`} />
-              </a>
+              </Link>
 
-              <a href="http://twitter.com" target="blank">
+              <Link href="http://twitter.com" target="blank">
                 <FaTwitterSquare className={styles.icono} />
-              </a>
+              </Link>
 
-              <a href="https://www.instagram.com/edisonsolutions/" target="blank">
+              <Link href="https://www.instagram.com/edisonsolutions/" target="blank">
                 <FaInstagramSquare className={styles.icono}
               />
-              </a>
+              </Link>
               
             </div>
           </div>
@@ -67,18 +68,18 @@ const Team = () => {
             <p>Vice President</p>
 
             <div className={styles.contenedor_iconos}>
-              <a href="https://www.facebook.com/Edison-Solutions-LLC-100320772656843" target="blank">
+              <Link href="https://www.facebook.com/Edison-Solutions-LLC-100320772656843" target="blank">
                 <FaFacebook className={`${styles.icono} ${styles.facebook}`} />
-              </a>
+              </Link>
 
-              <a href="http://twitter.com" target="blank">
+              <Link href="http://twitter.com" target="blank">
                 <FaTwitterSquare className={styles.icono} />
-              </a>
+              </Link>
 
-              <a href="https://www.instagram.com/edisonsolutions/" target="blank">
+              <Link href="https://www.instagram.com/edisonsolutions/" target="blank">
                 <FaInstagramSquare className={styles.icono}
               />
-              </a>
+              </Link>
               
             </div>
           </div>
@@ -96,18 +97,18 @@ const Team = () => {
             <h2>Xavier Alonso</h2>
             <p>Ingennier</p>
             <div className={styles.contenedor_iconos}>
-              <a href="https://www.facebook.com/Edison-Solutions-LLC-100320772656843" target="blank">
+              <Link href="https://www.facebook.com/Edison-Solutions-LLC-100320772656843" target="blank">
                 <FaFacebook className={`${styles.icono} ${styles.facebook}`} />
-              </a>
+              </Link>
 
-              <a href="http://twitter.com" target="blank">
+              <Link href="http://twitter.com" target="blank">
                 <FaTwitterSquare className={styles.icono} />
-              </a>
+              </Link>
 
-              <a href="https://www.instagram.com/edisonsolutions/" target="blank">
+              <Link href="https://www.instagram.com/edisonsolutions/" target="blank">
                 <FaInstagramSquare className={styles.icono}
               />
-              </a>
+              </Link>
               
             </div>
           </div>

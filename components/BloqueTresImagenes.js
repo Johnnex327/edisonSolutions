@@ -4,6 +4,7 @@ import styles from "../styles/Home.module.css";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Link from "next/link";
 
 const BloqueTresImagenes = ({ entrada }) => {
 
@@ -25,7 +26,7 @@ const BloqueTresImagenes = ({ entrada }) => {
       >
         <div className={styles.contenido_imagen}>
           <div className={styles.boton_dentro_de_imagen}>
-            <a className="prueba">Get a Quote</a>
+            <Link href="#" className="prueba">Get a Quote</Link>
           </div>
         </div>
 
