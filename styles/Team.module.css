@@ -1,0 +1,78 @@
+@import url(https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@200&display=swap);
+
+.contenedor_teamWork{
+    margin-top: 5rem;
+}
+
+.contenedor_teamWork h1{
+    margin-bottom: 5rem;
+}
+
+.divisor{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: max-content;
+    
+    gap: 2rem;
+    font-family: 'Gemunu Libre', sans-serif;
+    background-color: rebeccapurple;
+}
+
+@media (max-width:768px){
+    .divisor{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.tarjeta{
+    background-color: #E5E5E5;
+}
+
+
+.tarjeta h2{
+    text-align: center;
+    margin: 0;
+}
+
+.tarjeta p{
+    text-align: center;
+    margin-top: .5rem;
+
+}
+
+.contenedor_descripcion{
+  
+    height: 10rem;
+    padding-top: 2rem;
+}
+
+
+.contenedor_iconos{
+    
+    display: flex;
+    width: fit-content;
+    margin: 0 auto;
+    gap: 1rem;
+    padding-top: 1rem;
+}
+
+.icono{
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.facebook:hover{
+    width: 35px;
+    height: 35px;
+    color: blue;
+    transition: .5s;
+}
+
+
+@media(max-width:768px){
+    .tarjeta{
+      
+    }
+}

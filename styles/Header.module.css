@@ -1,0 +1,133 @@
+.header{
+    background-color: #101010;
+    height: fit-content;
+    padding: 1rem;
+    color: aliceblue;
+}
+
+.logo{
+    display: flex;
+    width: fit-content;
+}
+
+@media (min-width:768px){
+    .contenedor{
+    display: grid;
+    grid-template-columns:  1fr 1fr;
+    margin: 0 auto;
+    width: 65%;
+    padding-top: 1rem;
+}
+}
+
+.barra{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+@media (min-width:768px){
+    .barra{
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+.barra a:hover{
+    color: gold;
+}
+
+.barra a{
+    margin: 2rem;
+}
+
+.nombre_empresa{
+    margin-bottom: 0;
+    padding-top: 0;
+}
+
+.nombre_empresa h1{
+
+   padding-bottom: 0;
+   margin-bottom: 0;
+}
+
+.nombre_empresa p{
+    text-align: center;
+    margin: 0;
+}
+
+
+
+
+
+
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 15px 100px;
+    z-index: 100000;
+    
+}
+
+.header,
+.sticky{
+    
+    background: #000;
+    
+}
+
+.header .logo2{
+    position: relative;
+    font-weight: 700;
+    color: #000;
+    text-decoration: none;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.6s;
+    
+}
+
+.header ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header ul li{
+    position: relative;
+    list-style: none;
+}
+
+.header ul li a{
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: 500px;
+    transition: 0.6s;
+}
+
+.banner{
+    position: relative;
+    width: 100%;    
+    background-size: cover;
+}
+
+
+.header.sticky .logo2,
+.header.sticky ul li a{
+    color: #fff;
+}
