@@ -104,22 +104,31 @@ export default function Home({ renovacion, construccion, electrical }) {
           >
             <SwiperSlide>
               <div>
-                <img width="750px" height="450" src="../img/1.jpg" alt="" />
+               {/*  <img width="750px" height="450" src="../img/1.jpg" alt="" /> */}
+                <Image
+                  width={750} height={450} src="/img/1.jpg"
+                />
               </div>
             </SwiperSlide>
             <SwiperSlide>
               <div>
-                <img width="750px" height="450" src="../img/2.jpg" alt="" />
+              <Image
+                  width={750} height={450} src="/img/2.jpg"
+                />
               </div>
             </SwiperSlide>
             <SwiperSlide>
               <div>
-                <img width="750px" height="450" src="../img/3.jpg" alt="" />
+              <Image
+                  width={750} height={450} src="/img/3.jpg"
+                />
               </div>
             </SwiperSlide>
             <SwiperSlide>
               <div>
-                <img width="750px" height="450" src="../img/4.jpg" alt="" />
+              <Image
+                  width={750} height={450} src="/img/4.jpg"
+                />
               </div>
             </SwiperSlide>
           </Swiper>
@@ -134,9 +143,9 @@ export default function Home({ renovacion, construccion, electrical }) {
 }
 
 export async function getServerSideProps() {
-  const urlRenovacion = "http://localhost:1337/renovacions";
-  const urlConstruccion = "http://localhost:1337/construccions";
-  const urlElectrical = "http://localhost:1337/electricals";
+  const urlRenovacion = `${process.env.API_URL}/renovacions`;
+  const urlConstruccion = `${process.env.API_URL}/construccions`;
+  const urlElectrical = `${process.env.API_URL}/electricals`;
 
   const [resRenovacion, resConstruccion, resElectrical] = await Promise.all([
     fetch(urlRenovacion),

@@ -31,7 +31,7 @@ const About = ({resultado}) => {
 
 export async function getServerSideProps(){
 
-  const url = 'http://localhost:1337/acercas'
+  const url = `${process.env.API_URL}/acercas`;
   const respuesta = await fetch(url)
   const resultado = await respuesta.json()
 

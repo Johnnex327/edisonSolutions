@@ -8,7 +8,9 @@ const Header = () => {
       <header className={styles.header}>
       <div className={styles.logo}>
       <a href="/">
-        <img width={100} height={60} layout="fixed" src="/img/logo.png" />
+        <Image
+        width={100} height={60} layout="fixed" src="/img/logo.png"
+        />
       </a>
       <div className={styles.nombre_empresa}>
         <a href="/">

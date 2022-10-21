@@ -27,9 +27,9 @@ const Footer = () => {
           <div className={styles.redes_container}>
             <h2>Follow Us</h2>
             <ul>
-                <li><a href="https://www.facebook.com/Edison-Solutions-LLC-100320772656843" target="_blank" className="facebook"><i className="fab fa-facebook-f"></i></a></li>
-                <li><a href="https://www.instagram.com/edisonsolutions/" target="_blank" className="instagram"><i className="fab fa-instagram"></i></a></li>
-                <li><a href="#" target="_blank" className="whatsapp"><i className="fab fa-whatsapp"></i></a></li>
+                <li><a href="https://www.facebook.com/Edison-Solutions-LLC-100320772656843" className="facebook"><i className="fab fa-facebook-f"></i></a></li>
+                <li><a href="https://www.instagram.com/edisonsolutions/" className="instagram"><i className="fab fa-instagram"></i></a></li>
+                <li><a href="#" className="whatsapp"><i className="fab fa-whatsapp"></i></a></li>
             </ul>
           </div>
         
