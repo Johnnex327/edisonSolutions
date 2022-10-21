@@ -42,7 +42,7 @@ export default function Home({ renovacion, construccion, electrical }) {
               </p>
             </div>
 
-            <Image src="/img/fondo2.jpg" width={400} height={300} />
+            <Image src="/img/fondo2.jpg" width={400} height={300} alt="fondo2"/>
           </div>
         </div>
 
@@ -77,6 +77,7 @@ export default function Home({ renovacion, construccion, electrical }) {
                   width={400}
                   height={400}
                   src="/img/experience.jpg"
+                  alt="experience"
                 />
               </div>
             </div>
@@ -106,28 +107,28 @@ export default function Home({ renovacion, construccion, electrical }) {
               <div>
                {/*  <img width="750px" height="450" src="../img/1.jpg" alt="" /> */}
                 <Image
-                  width={750} height={450} src="/img/1.jpg"
+                  width={750} height={450} src="/img/1.jpg" alt={"imagen1"}
                 />
               </div>
             </SwiperSlide>
             <SwiperSlide>
               <div>
               <Image
-                  width={750} height={450} src="/img/2.jpg"
+                  width={750} height={450} src="/img/2.jpg" alt={"imagen2"}
                 />
               </div>
             </SwiperSlide>
             <SwiperSlide>
               <div>
               <Image
-                  width={750} height={450} src="/img/3.jpg"
+                  width={750} height={450} src="/img/3.jpg" alt={"imagen3"}
                 />
               </div>
             </SwiperSlide>
             <SwiperSlide>
               <div>
               <Image
-                  width={750} height={450} src="/img/4.jpg"
+                  width={750} height={450} src="/img/4.jpg" alt={"imagen4"}
                 />
               </div>
             </SwiperSlide>

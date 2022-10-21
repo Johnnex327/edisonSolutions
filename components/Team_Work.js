@@ -27,7 +27,7 @@ const Team = () => {
           className={styles.tarjeta}
         >
           <div className={styles.tarjeta1}>
-            <Image width={400} height={300} src="/img/ceo.jpg" />
+            <Image width={400} height={300} src="/img/ceo.jpg" alt="tarjeta1"/>
           </div>
           <div className={styles.contenedor_descripcion}>
             <h2>Edison Naranjo</h2>
@@ -61,6 +61,7 @@ const Team = () => {
               height={300}
               layout={"responsive"}
               src="/img/manager.jpg"
+              alt="manager"
             />
           </div>
           <div className={styles.contenedor_descripcion}>
@@ -91,7 +92,7 @@ const Team = () => {
           className={styles.tarjeta}
         >
           <div>
-            <Image width={400} height={300} src="/img/ingeniero.jpg" />
+            <Image width={400} height={300} src="/img/ingeniero.jpg" alt="ingeniero"/>
           </div>
           <div className={styles.contenedor_descripcion}>
             <h2>Xavier Alonso</h2>

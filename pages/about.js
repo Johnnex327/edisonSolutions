@@ -20,6 +20,7 @@ const About = ({resultado}) => {
             width={200}
             height={200}
             src={imagen.url}
+            alt="imagen"
           />
 
           <p>{contenido}</p>
