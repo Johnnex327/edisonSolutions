@@ -23,7 +23,7 @@ const Renovacion = ({ renovacion, titulo }) => {
 
         <div className={styles.contenedor_renovaciones}>
           {renovacion.map((entrada) => (
-              <BloqueTresImagenes key={entrada.id} entrada={entrada} />
+              <BloqueTresImagenes key={entrada._id} entrada={entrada} />
           ))}
         </div>
         <div
