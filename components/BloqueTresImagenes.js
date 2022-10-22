@@ -1,5 +1,4 @@
-import { React, useEffect, useState } from "react";
-import Image from "next/image";
+import { React, useEffect} from "react";
 import styles from "../styles/Home.module.css";
 
 import AOS from "aos";

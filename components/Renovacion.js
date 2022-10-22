@@ -4,7 +4,7 @@ import styles from "../styles/Home.module.css";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { Button } from "@nextui-org/react";
+
 
 const Renovacion = ({ renovacion, titulo }) => {
   useEffect(() => {
@@ -23,9 +23,7 @@ const Renovacion = ({ renovacion, titulo }) => {
 
         <div className={styles.contenedor_renovaciones}>
           {renovacion.map((entrada) => (
-            <div className={styles.contenedor_bloqueTresImagenes}>
-              <BloqueTresImagenes key={entrada} entrada={entrada} />
-            </div>
+              <BloqueTresImagenes key={entrada.id} entrada={entrada} />
           ))}
         </div>
         <div
