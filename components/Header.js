@@ -6,19 +6,25 @@ const Header = () => {
   return (
     <>
       <header className={styles.header}>
-      <div className={styles.logo}>
-      <Link href="/">
-        <Image
-        width={100} height={60} layout="fixed" src="/img/logo.png" alt="logo"
-        />
-      </Link>
-      <div className={styles.nombre_empresa}>
-        <Link href="/">
-          <h1>Edison Solutions LLC</h1>
-        </Link>
-        <p>General Constructor - New York</p>
-      </div>
-    </div>
+        <div className={styles.logo}>
+          <Link href="/">
+            <div>
+              <Image
+                width={100}
+                height={60}
+                layout="fixed"
+                src="/img/logo.png"
+                alt="logo"
+              />
+            </div>
+          </Link>
+          <div className={styles.nombre_empresa}>
+            <Link href="/">
+              <h1>Edison Solutions LLC</h1>
+            </Link>
+            <p>General Constructor - New York</p>
+          </div>
+        </div>
         <ul>
           <li>
             <Link href="/">Home</Link>
@@ -42,10 +48,7 @@ const Header = () => {
       </header>
 
       <section className={styles.banner}></section>
-
     </>
-
-    
   );
 };
 

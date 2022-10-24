@@ -23,7 +23,7 @@ const Layout = ({ children, pagina }) => {
          {children}
          
        
-      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" async />
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" async/>
       <script>AOS.init();</script>
       
 

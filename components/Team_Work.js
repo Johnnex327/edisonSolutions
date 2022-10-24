@@ -27,25 +27,37 @@ const Team = () => {
           className={styles.tarjeta}
         >
           <div className={styles.tarjeta1}>
-            <Image width={400} height={300} src="/img/ceo.jpg" alt="tarjeta1"/>
+            <Image width={400} height={300} src="/img/ceo.jpg" alt="tarjeta1" />
           </div>
           <div className={styles.contenedor_descripcion}>
             <h2>Edison Naranjo</h2>
             <p>CEO</p>
             <div className={styles.contenedor_iconos}>
-              <Link href="https://www.facebook.com/Edison-Solutions-LLC-100320772656843" target="blank">
-                <FaFacebook className={`${styles.icono} ${styles.facebook}`} />
+              <Link
+                href="https://www.facebook.com/Edison-Solutions-LLC-100320772656843"
+                target="blank"
+              >
+                <div>
+                  <FaFacebook className={`${styles.icono} ${styles.facebook}`} />
+                </div>
+                
               </Link>
 
               <Link href="http://twitter.com" target="blank">
-                <FaTwitterSquare className={styles.icono} />
+                <div>
+                  <FaTwitterSquare className={styles.icono} />
+                </div>
               </Link>
 
-              <Link href="https://www.instagram.com/edisonsolutions/" target="blank">
-                <FaInstagramSquare className={styles.icono}
-              />
+              <Link
+                href="https://www.instagram.com/edisonsolutions/"
+                target="blank"
+              >
+                <div>
+                  <FaInstagramSquare className={styles.icono} />
+                </div>
+                
               </Link>
-              
             </div>
           </div>
         </div>
@@ -69,19 +81,31 @@ const Team = () => {
             <p>Vice President</p>
 
             <div className={styles.contenedor_iconos}>
-              <Link href="https://www.facebook.com/Edison-Solutions-LLC-100320772656843" target="blank">
-                <FaFacebook className={`${styles.icono} ${styles.facebook}`} />
+              <Link
+                href="https://www.facebook.com/Edison-Solutions-LLC-100320772656843"
+                target="blank"
+              >
+                <div>
+                  <FaFacebook className={`${styles.icono} ${styles.facebook}`} />
+                </div>
+                
               </Link>
 
               <Link href="http://twitter.com" target="blank">
-                <FaTwitterSquare className={styles.icono} />
+                <div>
+                  <FaTwitterSquare className={styles.icono} />
+                </div>
               </Link>
 
-              <Link href="https://www.instagram.com/edisonsolutions/" target="blank">
-                <FaInstagramSquare className={styles.icono}
-              />
+              <Link
+                href="https://www.instagram.com/edisonsolutions/"
+                target="blank"
+              >
+                <div>
+                  <FaInstagramSquare className={styles.icono} />
+                </div>
+                
               </Link>
-              
             </div>
           </div>
         </div>
@@ -92,25 +116,42 @@ const Team = () => {
           className={styles.tarjeta}
         >
           <div>
-            <Image width={400} height={300} src="/img/ingeniero.jpg" alt="ingeniero"/>
+            <Image
+              width={400}
+              height={300}
+              src="/img/ingeniero.jpg"
+              alt="ingeniero"
+            />
           </div>
           <div className={styles.contenedor_descripcion}>
             <h2>Xavier Alonso</h2>
             <p>Ingennier</p>
             <div className={styles.contenedor_iconos}>
-              <Link href="https://www.facebook.com/Edison-Solutions-LLC-100320772656843" target="blank">
-                <FaFacebook className={`${styles.icono} ${styles.facebook}`} />
+              <Link
+                href="https://www.facebook.com/Edison-Solutions-LLC-100320772656843"
+                target="blank"
+              >
+                <div>
+                  <FaFacebook className={`${styles.icono} ${styles.facebook}`} />
+                </div>
+                
               </Link>
 
               <Link href="http://twitter.com" target="blank">
-                <FaTwitterSquare className={styles.icono} />
+                <div>
+                  <FaTwitterSquare className={styles.icono} />
+                </div>
               </Link>
 
-              <Link href="https://www.instagram.com/edisonsolutions/" target="blank">
-                <FaInstagramSquare className={styles.icono}
-              />
+              <Link
+                href="https://www.instagram.com/edisonsolutions/"
+                target="blank"
+              >
+                <div>
+                  <FaInstagramSquare className={styles.icono} />
+                </div>
+                
               </Link>
-              
             </div>
           </div>
         </div>

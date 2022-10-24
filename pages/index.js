@@ -6,6 +6,7 @@ import Layout from "../components/Layout";
 import Renovacion from "../components/Renovacion";
 import Construccion from "../components/Construccion";
 import Electrical from "../components/Electrical";
+import Team_Work from "../components/Team_Work";
 import Image from "next/image";
 
 import "swiper/css";
@@ -15,7 +16,7 @@ import { EffectCoverflow, Pagination } from "swiper";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
-import Team_Work from "../components/Team_Work";
+
 
 export default function Home({ renovacion, construccion, electrical }) {
   useEffect(() => {
@@ -25,7 +26,6 @@ export default function Home({ renovacion, construccion, electrical }) {
   return (
     <div className={styles.container}>
       <Layout pagina="Home">
-
         <div className={styles.fondo}>
           <div className={styles.contenedor}>
             <h1>Home Improvement Contractor </h1>
@@ -41,8 +41,14 @@ export default function Home({ renovacion, construccion, electrical }) {
                 dignissim quisque ligula amet.
               </p>
             </div>
-
-            <Image src="/img/fondo2.jpg" width={400} height={300} alt="fondo2"/>
+            <div>
+              <Image
+                src="/img/fondo2.jpg"
+                width={400}
+                height={300}
+                alt="fondo2"
+              />
+            </div>
           </div>
         </div>
 
@@ -105,39 +111,49 @@ export default function Home({ renovacion, construccion, electrical }) {
           >
             <SwiperSlide>
               <div>
-               {/*  <img width="750px" height="450" src="../img/1.jpg" alt="" /> */}
+                {/*  <img width="750px" height="450" src="../img/1.jpg" alt="" /> */}
                 <Image
-                  width={750} height={450} src="/img/1.jpg" alt={"imagen1"}
+                  width={750}
+                  height={450}
+                  src="/img/1.jpg"
+                  alt={"imagen1"}
                 />
               </div>
             </SwiperSlide>
             <SwiperSlide>
               <div>
-              <Image
-                  width={750} height={450} src="/img/2.jpg" alt={"imagen2"}
+                <Image
+                  width={750}
+                  height={450}
+                  src="/img/2.jpg"
+                  alt={"imagen2"}
                 />
               </div>
             </SwiperSlide>
             <SwiperSlide>
               <div>
-              <Image
-                  width={750} height={450} src="/img/3.jpg" alt={"imagen3"}
+                <Image
+                  width={750}
+                  height={450}
+                  src="/img/3.jpg"
+                  alt={"imagen3"}
                 />
               </div>
             </SwiperSlide>
             <SwiperSlide>
               <div>
-              <Image
-                  width={750} height={450} src="/img/4.jpg" alt={"imagen4"}
+                <Image
+                  width={750}
+                  height={450}
+                  src="/img/4.jpg"
+                  alt={"imagen4"}
                 />
               </div>
             </SwiperSlide>
           </Swiper>
         </div>
 
-        <Team_Work>
-
-        </Team_Work>
+        <Team_Work></Team_Work>
       </Layout>
     </div>
   );
