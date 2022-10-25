@@ -17,7 +17,7 @@ const Renovacion = ({ renovacion, titulo }) => {
         /* data-aos="fade-right"
         data-aos-offset="300"
         data-aos-easing="ease-in-sine" */
-        className={`${styles.contenedor_servicios} contenedor`}
+        className={`${styles.contenedor_servicios}`}
       >
         <h1>{titulo}</h1>
 
@@ -26,6 +26,7 @@ const Renovacion = ({ renovacion, titulo }) => {
               <BloqueTresImagenes key={entrada._id} entrada={entrada} />
           ))}
         </div>
+        
         <div
           data-aos="fade-right"
           data-aos-duration="1000"

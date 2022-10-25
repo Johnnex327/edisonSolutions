@@ -24,7 +24,7 @@ export default function Home({ renovacion, construccion, electrical }) {
   }, []);
 
   return (
-    <div className={styles.container}>
+    
       <Layout pagina="Home">
         <div className={styles.fondo}>
           <div className={styles.contenedor}>
@@ -77,15 +77,7 @@ export default function Home({ renovacion, construccion, electrical }) {
                 </p>
               </div>
 
-              <div data-aos="zoom-in-left" className={styles.lado2}>
-                <Image
-                  layout="fixed"
-                  width={400}
-                  height={400}
-                  src="/img/experience.jpg"
-                  alt="experience"
-                />
-              </div>
+              
             </div>
           </div>
         </div>
@@ -155,7 +147,7 @@ export default function Home({ renovacion, construccion, electrical }) {
 
         <Team_Work></Team_Work>
       </Layout>
-    </div>
+    
   );
 }
 

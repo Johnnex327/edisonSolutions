@@ -3,16 +3,18 @@ import Head from "next/head";
 import Header from "./Header";
 import Footer from "./Footer";
 
+import styles from "../styles/Home.module.css";
+
 
 const Layout = ({ children, pagina }) => {
 
   return (
-    <div>
+    <div className={styles.Contenedor_padre}>
       <Head>
         <title>Edison Solutions - {pagina}</title>
         <meta
-          name="description"
-          content="General Constructor Edison Solutions Web Site"
+          name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, minimum-scale=1.0"
           
         />
 

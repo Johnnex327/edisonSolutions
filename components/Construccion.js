@@ -11,7 +11,7 @@ const Construccion = ({ construccion, titulo }) => {
   }, []);
 
   return (
-    <div className={`${styles.contenedor_servicios} contenedor`}>
+    <div className={`${styles.contenedor_servicios}`}>
       <h1>{titulo}</h1>
 
       <div

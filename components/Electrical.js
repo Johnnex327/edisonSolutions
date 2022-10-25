@@ -16,7 +16,7 @@ const Construccion = ({ electrical, titulo }) => {
       /* data-aos="fade-right"
       data-aos-offset="300"
       data-aos-easing="ease-in-sine" */
-      className={`${styles.contenedor_servicios} contenedor`}
+      className={`${styles.contenedor_servicios}`}
     >
       <h1>{titulo}</h1>
       <div className={styles.contenedor_renovaciones}>

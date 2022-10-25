@@ -1,5 +1,7 @@
 .container {
   padding: 0 0rem;
+  background-color: red;
+  width: 100%;
 }
 
 .main {
@@ -70,7 +72,7 @@
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  max-width: 800px;
+  width: 100%;
 }
 
 .card {
@@ -131,6 +133,7 @@
 /*  -------------------------------------------------------- */
 
 .fondo {
+  
   background-image: linear-gradient(
       to right,
       rgb(0 0 0 / 0.7),
@@ -141,7 +144,12 @@
   background-position: 50%;
   padding: 5rem 0;
   height: 100vh;
+  
+  background-color: red;
 }
+
+
+
 
 .contenedor {
   width: 65%;
@@ -230,26 +238,19 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: red;
 }
 
 
 .contenedor_renovaciones {
   display: flex;
+  flex-direction: row;
   gap: 3rem;
   padding: 2rem;
 }
-@media (max-width:768px){
-  .contenedor_renovaciones{
-    flex-direction: column;
-  }
-}
 
 
-@media (min-width: 400px) {
-  .contenedor_renovaciones {
-    flex-direction: row;
-  }
-}
+
 
 .descripcion {
 
@@ -425,4 +426,31 @@
 .contenedor_bloqueTresImagenes:nth-child(3){
   display: none;
 }
+}
+
+
+/* .contenedor_categorias{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+@media(max-width:768px){
+  .contenedor_categorias{
+    width: 100vh;
+  }
+} */
+
+
+
+@media (max-width:800px){
+  .contenedor_renovaciones{
+    flex-direction: column;
+    
+    background-color: red;
+  }
+
+  
+
+
 }
