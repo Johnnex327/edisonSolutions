@@ -19,7 +19,7 @@ const Team = () => {
 
   return (
     <div className={`${styles.contenedor_teamWork} contenedor`}>
-      <h1>Meet the Team Work</h1>
+      <h1>MEET THE TEAM WORK</h1>
       <div className={styles.divisor}>
         <div
           data-aos="fade-up"
@@ -27,7 +27,7 @@ const Team = () => {
           className={styles.tarjeta}
         >
           <div className={styles.tarjeta1}>
-            <Image width={400} height={300} src="/img/ceo.jpg" alt="tarjeta1" />
+            <Image width={400} height={300} src="/img/edison.jpg" alt="tarjeta1" />
           </div>
           <div className={styles.contenedor_descripcion}>
             <h2>Edison Naranjo</h2>
@@ -38,14 +38,17 @@ const Team = () => {
                 target="blank"
               >
                 <div>
-                  <FaFacebook className={`${styles.icono} ${styles.facebook}`} />
+                  <FaFacebook
+                    className={`${styles.icono} ${styles.facebook}`}
+                  />
                 </div>
-                
               </Link>
 
               <Link href="http://twitter.com" target="blank">
                 <div>
-                  <FaTwitterSquare className={styles.icono} />
+                  <FaTwitterSquare
+                    className={`${styles.icono} ${styles.twitter}`}
+                  />
                 </div>
               </Link>
 
@@ -54,9 +57,10 @@ const Team = () => {
                 target="blank"
               >
                 <div>
-                  <FaInstagramSquare className={styles.icono} />
+                  <FaInstagramSquare
+                    className={`${styles.icono} ${styles.instagram}`}
+                  />
                 </div>
-                
               </Link>
             </div>
           </div>
@@ -67,7 +71,7 @@ const Team = () => {
           data-aos-duration="1000"
           className={styles.tarjeta}
         >
-          <div>
+          <div className={styles.tarjeta2}>
             <Image
               width={400}
               height={300}
@@ -86,14 +90,17 @@ const Team = () => {
                 target="blank"
               >
                 <div>
-                  <FaFacebook className={`${styles.icono} ${styles.facebook}`} />
+                  <FaFacebook
+                    className={`${styles.icono} ${styles.facebook}`}
+                  />
                 </div>
-                
               </Link>
 
               <Link href="http://twitter.com" target="blank">
                 <div>
-                  <FaTwitterSquare className={styles.icono} />
+                  <FaTwitterSquare
+                    className={`${styles.icono} ${styles.twitter}`}
+                  />
                 </div>
               </Link>
 
@@ -102,9 +109,10 @@ const Team = () => {
                 target="blank"
               >
                 <div>
-                  <FaInstagramSquare className={styles.icono} />
+                  <FaInstagramSquare
+                    className={`${styles.icono} ${styles.instagram}`}
+                  />
                 </div>
-                
               </Link>
             </div>
           </div>
@@ -115,7 +123,7 @@ const Team = () => {
           data-aos-duration="1500"
           className={styles.tarjeta}
         >
-          <div>
+          <div className={styles.tarjeta3}>
             <Image
               width={400}
               height={300}
@@ -132,14 +140,17 @@ const Team = () => {
                 target="blank"
               >
                 <div>
-                  <FaFacebook className={`${styles.icono} ${styles.facebook}`} />
+                  <FaFacebook
+                    className={`${styles.icono} ${styles.facebook}`}
+                  />
                 </div>
-                
               </Link>
 
               <Link href="http://twitter.com" target="blank">
                 <div>
-                  <FaTwitterSquare className={styles.icono} />
+                  <FaTwitterSquare
+                    className={`${styles.icono} ${styles.twitter}`}
+                  />
                 </div>
               </Link>
 
@@ -148,9 +159,10 @@ const Team = () => {
                 target="blank"
               >
                 <div>
-                  <FaInstagramSquare className={styles.icono} />
+                  <FaInstagramSquare
+                    className={`${styles.icono} ${styles.instagram}`}
+                  />
                 </div>
-                
               </Link>
             </div>
           </div>

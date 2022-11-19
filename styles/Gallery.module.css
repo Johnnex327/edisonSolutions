@@ -1,0 +1,181 @@
+.fondo_gallery{
+    background-image: linear-gradient(
+        to right,
+        rgb(0 0 0 / 0.4),
+        rgb(0 0 0 / 0.4)
+      ),
+      url("../public/img/gallery.jpg");
+  background-size: cover;
+  background-position: 50%;
+  background-attachment: fixed;
+  padding: 5rem 0;
+  height: 40rem;
+}
+
+.titulo {
+  text-align: center;
+  font-size: 2.5rem;
+  padding: 6rem;
+  color: aliceblue;
+  font-family: 'Oswald', sans-serif;
+}
+
+.titulo span {
+  color: var(--titulos);
+}
+
+.ocultar{
+  opacity: 0;
+}
+
+.mostrar{
+  opacity: 1;
+  transition-duration: 2s;
+  text-transform: uppercase;
+}
+
+
+.contenedor{
+  font-family: 'Oswald', sans-serif;
+  margin: 0 auto;
+  width: 70%;
+  margin-top: 2rem;
+  margin-bottom: 0rem;
+  /* background-color: green; */
+}
+
+
+.contenedor h1{
+  text-align: center;
+}
+
+.barra{
+  display: flex;
+  justify-content: center;
+}
+
+.barra h1{
+  
+  width: fit-content;
+  border-bottom: 5px solid var(--titulos);
+  margin-bottom: 5rem;
+  padding: 2rem;
+  padding-bottom: 1rem;
+  
+}
+
+.fila{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 2rem;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  
+}
+
+.container_image{
+  
+  object-fit: cover;
+  transition: 0.8s;
+  height: 100%;
+  
+}
+
+.container_image img{
+  border-radius: 15px;
+}
+
+.container_image:hover{
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+
+.columna{
+  /* background-color: blue; */
+  background-image: url("../public/img/gallery/1.jpg");
+  background-size: cover;
+  border-radius: 5px;
+}
+
+
+/* ------------------------------------------------------------------------------------------------------ */
+
+.caja{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 100%;
+  /* background-color: blue; */
+  gap: 2rem;
+  margin-bottom: 1rem;
+}
+
+.caja_Face{
+  grid-template-columns: 1fr 1fr 1fr 2fr;
+  gap: 1rem;
+}
+
+
+
+.player_wrapper {
+  display: flex;
+  justify-content: center;
+ /*  height: 0px; */
+  width: 100%;
+  /* position: relative;
+  padding-top: 56.25%; */
+  
+}
+.react_player {
+  
+  width: 100%;
+  height: 100%;
+  
+}
+
+/* -------------------------------------------------------------------------------------------------------- */
+
+.follow_us{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 35rem;
+  background-image: linear-gradient(to right,
+  rgb(0 0 0 / 0.7),
+  rgb(0 0 0 / 0.7)),
+  url('../public/img/follow_us.jpg');
+  background-size: cover;
+  justify-content: center;
+  font-family: 'oswaldo', sans serif;
+  align-items: center;
+  font-size: 30px;
+  background-attachment: fixed;
+}
+
+.follow_us h2{
+  color: aliceblue;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.follow_us span{
+  color: var(--titulos);
+}
+
+.iconos_social_network{
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+.icono{
+  width: 40px;
+  height: 40px;
+  color: aliceblue;
+  margin: 1rem;
+}
+
+.icono:hover{
+  cursor: pointer;
+}

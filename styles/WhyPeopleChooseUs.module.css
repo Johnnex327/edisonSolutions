@@ -1,0 +1,81 @@
+
+
+.container{
+    display: grid;
+    width: 100%;
+    height: 40rem;
+    grid-template-columns: 1fr 1fr;
+    /* background-color: green; */
+    background-color: #dadada2d;
+}
+
+
+.lado1{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 90%;
+    /* background-color: blue; */
+    margin: auto;
+    align-items: flex-end;
+    padding-right: 3rem;
+}
+
+.lado1 h1{
+    font-size: 40px;
+    width: 70%;
+    text-transform: uppercase;
+    color: var(--titulos);
+}
+
+.lado1 h2{
+    width:70%;
+    text-transform: uppercase;
+}
+
+.lado1 li{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    line-height: 3;
+}
+
+
+.icono{
+    width: 30px;
+    height: 30px;
+    margin-right: 1rem;
+}
+
+
+.lado2{
+    width: 100%;
+    background-color: red;
+    display: grid;
+    grid-template-rows: 3fr 1fr;
+}
+
+.lado2_fondo{
+    width: 100%;
+    height: auto;
+    background-image: url('../public/img/WhyPeople.jpg');
+    background-size: cover;
+}
+
+
+.inferior{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: var(--titulos);
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 20px;
+    color: aliceblue;
+    text-align: center;
+}
+
+.inferior span{
+    color: black;
+}

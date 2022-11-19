@@ -4,6 +4,7 @@ import styles from "../styles/Home.module.css";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Link from "next/link";
 
 const Construccion = ({ construccion, titulo }) => {
   useEffect(() => {
@@ -11,28 +12,39 @@ const Construccion = ({ construccion, titulo }) => {
   }, []);
 
   return (
-    <div className={`${styles.contenedor_servicios}`}>
-      <h1>{titulo}</h1>
-
+    <>
       <div
-        /* data-aos="fade-left"
-        data-aos-offset="300"
-        data-aos-easing="ease-in-sine" */
-        className={styles.contenedor_renovaciones}
+        /* data-aos="fade-right"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine" */
+        className={`${styles.contenedor_servicios_construccion}`}
       >
-        {construccion.map((entrada) => (
+        <div className={styles.titulo_construccion}>
+          <h1>{titulo}</h1>
+        </div>
+
+        <div className={styles.contenedor_construccion}>
+          {construccion.map((entrada) => (
             <BloqueTresImagenes key={entrada._id} entrada={entrada} />
-        ))}
+          ))}
+        </div>
+
+        <div
+          data-aos="fade-down"
+          data-aos-duration="1000"
+          className={styles.contenedor_boton}
+        >
+          <Link href="/services">
+            <button className={`${styles.btn} ${styles.btn_up_beige}`}>
+              See More
+            </button>
+          </Link>
+        </div>
       </div>
 
-      <div
-        data-aos="fade-left"
-        data-aos-duration="5000"
-        className={styles.contenedor_boton}
-      >
-        <button className={styles.boton}>See More</button>
-      </div>
-    </div>
+      {/* <div className={styles.border}>
+      </div> */}
+    </>
   );
 };
 

@@ -24,9 +24,11 @@ const BloqueTresImagenes = ({ entrada }) => {
         className={styles.seccion}
       >
         <div className={styles.contenido_imagen}>
-          <div className={styles.boton_dentro_de_imagen}>
-            <Link href="#" className="prueba">Get a Quote</Link>
-          </div>
+          {/* <div>
+          <button className={`${styles.btn} ${styles.btn_up}`}>
+            See More
+          </button>
+          </div> */}
         </div>
 
         <style jsx>{`

@@ -1,0 +1,270 @@
+.fondo_services{
+    background-image: linear-gradient(
+        to right,
+        rgb(0 0 0 / 0.5),
+        rgb(0 0 0 / 0.5)
+      ),
+      url("../public/img/ourServices.jpg");
+  background-size: cover;
+  background-position: 50%;
+  background-attachment: fixed;
+  padding: 5rem 0;
+  height: 40rem;
+}
+
+.titulo {
+  text-align: center;
+  font-size: 2.5rem;
+  padding: 6rem;
+  color: aliceblue;
+  font-family: 'Oswald', sans-serif;
+}
+
+.titulo span {
+  color: var(--titulos);
+}
+
+.ocultar{
+  opacity: 0;
+}
+
+.mostrar{
+  opacity: 1;
+  transition-duration: 2s;
+}
+
+
+.contenedor{
+  width: 100%;
+  height: 170rem;
+  /* border: 3px solid green; */
+  margin: 7rem 0;
+  color: gray;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  padding: 0;
+  font-family: 'Oswald', sans-serif;
+}
+
+
+.subContenedor{
+  width: 70%;
+  height: fit-content;
+  /* border: 3px solid blue; */
+  margin: 0 auto;
+  
+}
+
+.subContenedor h1{
+  color: black;
+}
+
+.barra{
+  display: flex;
+  justify-content: center;
+}
+
+.barra h1{
+  
+  width: fit-content;
+  border-bottom: 5px solid var(--titulos);
+  margin-bottom: 5rem;
+  padding: 2rem;
+  padding-bottom: 1rem;
+  
+}
+
+.tituloSubContenedor{
+  display: flex;
+  justify-content: center;
+  font-family: 'Oswald', sans-serif;
+}
+
+/* ----------------------------------------------------------------------------------------------------------- */
+
+/* Boton flotante de whatsapp */
+
+.etiqueta{
+  display: flex;
+  position: fixed;
+  width: 98%;
+  height: 95vh;
+  justify-content: end;
+  align-items: flex-end;
+  
+}
+
+.etiqueta h3{
+  margin-right: 1rem;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.icono_flotante_whatsapp{
+  width: 50px;
+  height: 50px;
+  color: #25D366;
+  cursor: pointer;
+}
+
+
+
+
+/* ----------------------------------------------------------------------------------------------------------- */
+.fila{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: 100%;
+  height: 250px;
+  /* border: 3px solid red; */
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.fila h2{
+  text-align: center;
+  
+}
+
+
+.columna{
+  width: 100%;
+  height: 80%;
+  border-radius: 3px;
+}
+
+.contenido{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  padding: 1rem;
+  opacity: 0;
+  color: aliceblue;
+}
+
+.contenido:hover{
+  opacity: 1;
+  transition-duration: 2s;
+}
+
+.kitchen{
+  background-image: url("../public/img/services/kitchenRenovation.jpg");
+  background-size: cover;
+  
+}
+
+.contenido:hover{
+  background: rgb(0 0 0 / 0.8);
+  transition-duration: .5s;
+  cursor: pointer;
+}
+
+.livingRoom{
+  background-image: url("../public/img/services/livingRoom.jpg");
+  background-size: cover;
+}
+
+.bedRoom{
+  background-image: url("../public/img/services/bedRoom.jpg");
+  background-size: cover;
+}
+
+.banios{
+  background-image: url("../public/img/services/banios.jpg");
+  background-size: cover;
+}
+
+.bussiness{
+  background-image: url("../public/img/services/bussiness.jpg");
+  background-size: cover;
+}
+
+.basement{
+  background-image: url("../public/img/services/baseMent.jpg");
+  background-size: cover;
+}
+
+.paint{
+  background-image: url("../public/img/services/paint.jpg");
+  background-size: cover;
+}
+
+.drywall{
+  background-image: url("../public/img/services/drywall.jpg");
+  background-size: cover;
+}
+
+.woodFraming{
+  background-image: url("../public/img/services/woodFraming.jpg");
+  background-size: cover;
+}
+
+.metalStudFraming{
+  background-image: url("../public/img/services/metalStudFraming.jpg");
+  background-size: cover;
+}
+
+.newFlooring{
+  background-image: url("../public/img/services/newFlooring.jpg");
+  background-size: cover;
+}
+
+.siding{
+  background-image: url("../public/img/services/siding.jpg");
+  background-size: cover;
+}
+
+.handyman{
+  background-image: url("../public/img/services/handyman.webp");
+  background-size: cover;
+}
+
+.electricalInstallation{
+  background-image: url("../public/img/services/electricalInstallation.jpg");
+  background-size: cover;
+}
+
+.replaceLights{
+  background-image: url("../public/img/services/replaceLights.jpg");
+  background-size: cover;
+}
+
+.ilumination{
+  background-image: url("../public/img/services/ilumination.jpg");
+  background-size: cover;
+}
+
+
+
+/* -------------------------------------------------------------------------------------------- */
+
+.contenedor_need_sevices{
+  margin-top: 7rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.contenedor_Call_us{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.icono{
+  display: flex;
+  width: 30px;
+  height: 30px;
+  align-self: center;
+  margin-left: 1rem;
+  margin-right: 2rem;
+}
+
+.operadora{
+  border-radius: 10px;
+  
+}

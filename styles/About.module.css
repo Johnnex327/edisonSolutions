@@ -1,21 +1,425 @@
-.contenedor_about{
+.contenedor_about {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.contenedor_about p {
+  text-align: justify;
+}
+
+@media (min-width: 1300px) {
+  .contenedor_about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 3rem;
+    gap: 2rem;
+  }
+}
+.titulo {
+  text-align: center;
+  font-size: 2.5rem;
+  padding: 6rem;
+  color: aliceblue;
+  font-family: 'Oswald', sans-serif;
+}
+
+.titulo span {
+    color: var(--titulos);
+  }
+
+  .ocultar{
+    opacity: 0;
+  }
+  
+  .mostrar{
+    opacity: 1;
+    transition-duration: 2s;
+  }
+
+.fondo_about_us {
+    background-image: linear-gradient(
+        to right,
+        rgb(0 0 0 / 0.7),
+        rgb(0 0 0 / 0.7)
+      ),
+      url("../public/img/about.jpg");
+  background-size: cover;
+  background-position: 50%;
+  background-attachment: fixed;
+  padding: 5rem 0;
+  height: 40rem;
+}
+
+
+
+
+/* cuadro about us */
+
+
+.fondoAttachment{
+  
+  background-image:
+      url("../public/img/oficina.jpg");
+    width: 60%;
+  background-size: cover;
+  background-position: center;
+}
+
+/* --------------------------------------------------------------------------------------------------------------- */
+
+  .titulo_pagina{
     display: flex;
-    flex-direction: column;
-    margin: 2rem;
-}
+    width: 60%;
+    margin: auto;
+    justify-content: center;
+    /* background-color: blue; */
+  }
 
-.contenedor_about p{
-    text-align: justify;
-}
+  .titulo_pagina h1{
+    font-family: 'oswald', sans-serif;
+    text-transform: uppercase;
+  }
 
-@media (min-width:1300px){
-    .contenedor_about{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        padding: 3rem;
-        gap: 2rem;
-    }
-}
-.titulo{
+  .barra{
+    display: flex;
+    justify-content: center;
+  }
+  
+  .barra h1{
+    
+    width: fit-content;
+    border-bottom: 5px solid var(--titulos);
+    padding: 2rem;
+    padding-bottom: 1rem;
+    
+  }
+
+
+  .logo {
+    display: flex;
+    width: fit-content;
+  }
+
+  .nombre_empresa {
+    margin-bottom: 0;
+    padding-top: 0;
+  }
+  
+  .nombre_empresa h1 {
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+  
+  .nombre_empresa p {
     text-align: center;
+    margin: 0;
+  }
+
+
+
+/* ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+.seccion{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 60%;
+  height: 40rem;
+  /* background-color: blueviolet; */
+  margin: 0 auto;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+  justify-items: flex-end;
 }
+
+.lado1{
+  width: 70%;    
+}
+
+.fondo1{
+  width: 100%;
+  height: 80%;
+  background-image: url("../public/img/experience.jpg");
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.fondo2{
+  background-image: url("../public/img/fondo2.jpg");
+  width: 100%;
+  height: 70%;
+  background-color: yellow;
+  border: 10px solid aliceblue;
+  position: absolute;
+  top: 70%;
+  left: -50%;
+  background-size: cover
+}
+
+.fondo3{
+  background-image: url("../public/img/fondo4.jpg");
+  width:60%;
+  height: 60%;
+  background-color: yellow;
+  border: 10px solid aliceblue;
+  position: absolute;
+  top: -30%;
+  left: 20%;
+  background-size: cover;
+}
+
+.lado2{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 auto;
+  justify-content: flex-start;
+  padding: 2rem;
+}
+
+.lado2 h1{
+  font-weight: 900;
+  color: black;
+  font-size: larger;
+  color: gray;
+  margin: 0;
+  padding: 0;
+}
+
+
+.lado2 h2{
+  font-weight: 900;
+  font-size: xx-large;
+  padding: 0;
+  color: var(--titulos);
+}
+
+.lado2 p{
+  text-align: justify;
+  color: gray;
+  line-height: 2;
+  font-weight: 400;
+
+}
+
+/* ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+.contenedor_etiquetaWeAre{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 10rem;
+}
+
+.contenedor_etiquetaWeAre h2{
+  font-weight: 900;
+  font-size: 50px;
+  padding: 0;
+  color: var(--titulos);
+  margin: 2rem;
+}
+
+.imagen_centro{
+  width: 100%;
+  height: 25rem;
+  background-position: 0%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 1rem;
+}
+
+.imagen_newYork{
+  background-image: linear-gradient(
+    to right,
+    rgb(0 0 0 / 0.7),
+    rgb(0 0 0 / 0.7)
+  ), url("../public/img/newYork2.png");
+}
+
+.imagen_manhattan{
+  background-image: linear-gradient(
+    to right,
+    rgb(0 0 0 / 0.7),
+    rgb(0 0 0 / 0.7)
+  ), url("../public/img/manhattan.jpg");
+}
+
+.imagen_brooklyn{
+  background-image: linear-gradient(
+    to right,
+    rgb(0 0 0 / 0.7),
+    rgb(0 0 0 / 0.7)
+  ), url("../public/img/brooklyn.jpg");
+}
+
+.imagen_queens{
+  background-image: linear-gradient(
+    to right,
+    rgb(0 0 0 / 0.7),
+    rgb(0 0 0 / 0.7)
+  ), url("../public/img/queens.jpg");
+}
+
+.imagen_stateIsland{
+  background-image: linear-gradient(
+    to right,
+    rgb(0 0 0 / 0.7),
+    rgb(0 0 0 / 0.7)
+  ), url("../public/img/stateIsland.jpg");
+  background-position: bottom;
+}
+
+
+.imagen_bronx{
+  background-image: linear-gradient(
+    to right,
+    rgb(0 0 0 / 0.7),
+    rgb(0 0 0 / 0.7)
+  ), url("../public/img/bronx.jpg");
+  background-position: bottom;
+}
+
+
+.contenedor{
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  height: 100%;
+  /* border: 4px solid blue; */
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenedor h1{
+  color: aliceblue;
+}
+
+.contenedor h2{
+  color: aliceblue;
+  text-transform: uppercase;
+  font-size: 90px;
+}
+
+/* --------------------------------------------------------------------------------------------------------------------- */
+
+.contenedor_OurMissionVission{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 5rem;
+  width: 100%;
+  height: auto;
+  /* background-color: green; */
+}
+
+.lado1_Mission{
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  height: 100%;
+  /* background-color: red; */
+  justify-self: end;
+  background-image: linear-gradient(
+    to right,
+    rgb(0 0 0 / 0.1),
+    rgb(0 0 0 / 0.1)
+  /* ), url("../public/img/ourMission.webp"); */
+  ), url("../public/img/carro.png");
+  background-position: center;
+  background-size: cover;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.lado2_Mission{
+  width: 60%;
+  height: 100%;
+  /* background-color: blue; */
+  justify-self: start;
+  padding: 3rem;
+}
+
+
+.lado2_Mission h1{
+  font-weight: 900;
+  color: black;
+  font-size: larger;
+  color: gray;
+  margin: 0;
+  padding: 0;
+}
+
+
+.lado2_Mission h2{
+  font-weight: 900;
+  font-size: xx-large;
+  padding: 0;
+  color: var(--titulos);
+}
+
+.lado2_Mission p{
+  text-align: justify;
+  color: gray;
+  line-height: 2;
+  font-weight: 400;
+}
+
+/* -------------------------------------------------------------------------------------------------------------------*/
+
+
+.lado1_Vission{
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  height: 100%;
+  /* background-color: red; */
+  background-image: linear-gradient(
+    to right,
+    rgb(0 0 0 / 0.1),
+    rgb(0 0 0 / 0.1)
+  ), url("../public/img/ourVission.webp");
+  background-position: center;
+  background-size: cover;
+  justify-self: start;
+  border-radius: 10px;  
+}
+
+.lado2_Vission{
+  width: 60%;
+  height: 100%;
+  /* background-color: blue; */
+  justify-self: end;
+  padding: 3rem;
+}
+
+
+.lado2_Vission h1{
+  font-weight: 900;
+  color: black;
+  font-size: larger;
+  color: gray;
+  margin: 0;
+  padding: 0;
+}
+
+
+.lado2_Vission h2{
+  font-weight: 900;
+  font-size: xx-large;
+  padding: 0;
+  color: var(--titulos);
+}
+
+.lado2_Vission p{
+  text-align: justify;
+  color: gray;
+  line-height: 2;
+  font-weight: 400;
+}
+
+
+/* -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+

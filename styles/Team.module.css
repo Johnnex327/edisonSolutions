@@ -1,21 +1,52 @@
 @import url(https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@200&display=swap);
 
+.fondo_team{
+    background-image: linear-gradient(
+        to right,
+        rgb(0 0 0 / 0.6),
+        rgb(0 0 0 / 0.6)
+      ),
+      url("../public/img/team.jpg");
+  background-size: cover;
+  background-position: 50%;
+  background-attachment: fixed;
+  padding: 5rem 0;
+  height: 40rem;
+}
+
+.titulo {
+  text-align: center;
+  font-size: 2.5rem;
+  padding: 6rem;
+  color: aliceblue;
+  font-family: 'Oswald', sans-serif;
+}
+
+.titulo span {
+  color: var(--titulos);
+}
+
+
+
+/* ------------------------------------------------------------------------------------ */
+
+
 .contenedor_teamWork{
     margin-top: 5rem;
+    /* font-family: "Gemunu"; */
 }
 
 .contenedor_teamWork h1{
     margin-bottom: 5rem;
+    color: var(--titulos);
 }
 
 .divisor{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    width: max-content;
-    
     gap: 2rem;
-    font-family: 'Gemunu Libre', sans-serif;
-    background-color: rebeccapurple;
+    /* font-family: 'Gemunu Libre', sans-serif; */
+    align-items: center;
 }
 
 @media (max-width:768px){
@@ -23,10 +54,16 @@
         display: flex;
         flex-direction: column;
     }
+
+    .tarjeta{
+        width: 100%;
+        background-color: green;
+    }
 }
 
 .tarjeta{
-    background-color: #E5E5E5;
+    background-color: #dadada2d;
+    
 }
 
 
@@ -45,6 +82,11 @@
   
     height: 10rem;
     padding-top: 2rem;
+}
+
+.contenedor_descripcion h2{
+   /*  font-family: "Gemunu"; */
+    color: var(--titulos);
 }
 
 
@@ -66,13 +108,22 @@
 .facebook:hover{
     width: 35px;
     height: 35px;
-    color: blue;
+    color: #0B75D3;
     transition: .5s;
 }
 
 
-@media(max-width:768px){
-    .tarjeta{
-      
-    }
+.instagram:hover{
+    width: 35px;
+    height: 35px;
+    color: #D108DB;
+    transition: .5s;
 }
+
+.twitter:hover{
+    width: 35px;
+    height: 35px;
+    color: #099BDF;
+    transition: .5s;
+}
+

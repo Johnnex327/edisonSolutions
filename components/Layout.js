@@ -9,14 +9,15 @@ import styles from "../styles/Home.module.css";
 const Layout = ({ children, pagina }) => {
 
   return (
-    <div className={styles.Contenedor_padre}>
+    <div>
       <Head>
         <title>Edison Solutions - {pagina}</title>
-        <meta
+        {/* <meta
           name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, minimum-scale=1.0"
           
-        />
+        /> */}
+        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=yes, maximum-scale=5.0" />
 
       </Head>
 

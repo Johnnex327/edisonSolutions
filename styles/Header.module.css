@@ -1,128 +1,176 @@
-.header{
-    background-color: #101010;
-    height: fit-content;
-    padding: 1rem;
-    color: aliceblue;
+.header {
+  background-color: transparent;
+  height: 100px;
+  padding: 1rem;
+  color: aliceblue;
+  position: relative;
 }
 
-.logo{
+.bg{
+  background-color: aliceblue;
+  color: black;
+  box-shadow: 1px 1px 4px 1px black;
+}
+.header_menu_mobile {
+  background-color: black;
+}
+.logo {
+  display: flex;
+  width: fit-content;
+}
+
+.elementos {
+  display: flex;
+  width: 100%;
+}
+
+.nombre_empresa {
+  margin-bottom: 0;
+  padding-top: 0;
+}
+
+.nombre_empresa h1 {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.nombre_empresa p {
+  text-align: center;
+  margin: 0;
+}
+
+.contenedor_icono{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.icono{
+  width: 30px;
+  height: 30px;
+  margin-right: 1rem;
+  color: #25D366;
+}
+
+
+.header {
+  position: fixed; /* hace que la barra quede fijada */
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 1s;
+  padding: 15px 100px;
+  z-index: 100000;
+  opacity: 0.9;
+}
+
+.header ul {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header ul li {
+  position: relative;
+  list-style: none;
+}
+
+.header ul li a {
+  position: relative;
+  margin: 1rem 1rem;
+  text-decoration: none;
+
+  letter-spacing: 2px;
+  font-weight: 500px;
+  transition: 0.6s;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.header ul li a:hover {
+  border-bottom: 5px solid #d1af85;
+  transition: 0.2s;
+  color: #fff;
+}
+
+.banner {
+  position: relative;
+  width: 100%;
+  background-size: cover;
+}
+
+.menuBurguer {
+  display: none;
+}
+
+.nav__input:checked + .contenedorBarNav {
+  display: flex;
+  transition: 0.6s;
+}
+
+.nav__input {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  .contenedorBurguer {
     display: flex;
-    width: fit-content;
-}
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    margin: 2rem;
+  }
 
-@media (min-width:768px){
-    .contenedor{
-    display: grid;
-    grid-template-columns:  1fr 1fr;
-    margin: 0 auto;
-    width: 65%;
-    padding-top: 1rem;
-}
-}
+  .contenedorBarNav {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
 
-.barra{
+  .barraNavegacion {
     display: flex;
     flex-direction: column;
-    align-items: center;
-}
-
-
-@media (min-width:768px){
-    .barra{
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-    }
-}
-
-.barra a:hover{
-    color: gold;
-}
-
-.barra a{
-    margin: 2rem;
-}
-
-.nombre_empresa{
-    margin-bottom: 0;
-    padding-top: 0;
-}
-
-.nombre_empresa h1{
-
-   padding-bottom: 0;
-   margin-bottom: 0;
-}
-
-.nombre_empresa p{
-    text-align: center;
-    margin: 0;
-}
-
-
-.header{
-    position: fixed;
-    top: 0;
-    left: 0;
     width: 100%;
+  }
+
+  .barraNavegacion ul {
+    padding: 0;
+  }
+  .elementos {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
     align-items: center;
-    transition: 0.6s;
-    padding: 15px 100px;
-    z-index: 100000;
-    
-}
 
-.header,
-.sticky{
-    
-    background: #000;
-    
-}
+  }
+  .elementos li {
+    margin: 2.5rem;
+  }
 
-.header .logo2{
-    position: relative;
-    font-weight: 700;
-    color: #000;
-    text-decoration: none;
-    font-size: 2rem;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    transition: 0.6s;
-    
-}
-
-.header ul{
-    position: relative;
+  .header {
     display: flex;
-    justify-content: center;
-    align-items: center;
-}
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+    position: absolute;
 
-.header ul li{
-    position: relative;
-    list-style: none;
-}
+  }
 
-.header ul li a{
-    position: relative;
-    margin: 0 15px;
-    text-decoration: none;
-    color: #fff;
-    letter-spacing: 2px;
-    font-weight: 500px;
-    transition: 0.6s;
-}
+  .header_menu_mobile {
+    opacity: 1;
+  }
 
-.banner{
-    position: relative;
-    width: 100%;    
-    background-size: cover;
-}
+  .logo {
+    width: max-content;
+  }
 
-
-.header.sticky .logo2,
-.header.sticky ul li a{
-    color: #fff;
+  .menuBurguer {
+    display: block;
+    width: 40px;
+    height: 40px;
+  }
 }

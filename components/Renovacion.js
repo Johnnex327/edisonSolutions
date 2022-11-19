@@ -1,10 +1,10 @@
 import React, { useEffect } from "react";
 import BloqueTresImagenes from "./BloqueTresImagenes";
 import styles from "../styles/Home.module.css";
+import Link from "next/link";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
-
 
 const Renovacion = ({ renovacion, titulo }) => {
   useEffect(() => {
@@ -13,30 +13,31 @@ const Renovacion = ({ renovacion, titulo }) => {
 
   return (
     <>
-      <div
-        /* data-aos="fade-right"
-        data-aos-offset="300"
-        data-aos-easing="ease-in-sine" */
-        className={`${styles.contenedor_servicios}`}
-      >
-        <h1>{titulo}</h1>
+      <div className={`${styles.contenedor_servicios_renovacion}`}>
+        <div className={styles.titulo_renovaciones}>
+          <h1>{titulo}</h1>
+        </div>
 
         <div className={styles.contenedor_renovaciones}>
           {renovacion.map((entrada) => (
-              <BloqueTresImagenes key={entrada._id} entrada={entrada} />
+            <BloqueTresImagenes key={entrada._id} entrada={entrada} />
           ))}
         </div>
-        
+
         <div
-          data-aos="fade-right"
+          data-aos="fade-down"
           data-aos-duration="1000"
           className={styles.contenedor_boton}
         >
-          <button className={styles.boton}>
-            <span>See More</span>
-          </button>
+          <Link href="/services">
+            <button className={`${styles.btn} ${styles.btn_up_beige}`}>
+              See More
+            </button>
+          </Link>
         </div>
       </div>
+
+      {/* <div className={styles.border}></div> */}
     </>
   );
 };
