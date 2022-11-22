@@ -22,6 +22,7 @@
   padding: 6rem;
   color: aliceblue;
   font-family: 'Oswald', sans-serif;
+  
 }
 
 .titulo span {
@@ -57,14 +58,6 @@
 /* cuadro about us */
 
 
-.fondoAttachment{
-  
-  background-image:
-      url("../public/img/oficina.jpg");
-    width: 60%;
-  background-size: cover;
-  background-position: center;
-}
 
 /* --------------------------------------------------------------------------------------------------------------- */
 
@@ -310,6 +303,17 @@
   width: 100%;
   height: auto;
   /* background-color: green; */
+  
+}
+
+.contenedor_OurMissionVission2{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 5rem;
+  width: 100%;
+  height: auto;
+  /* background-color: green; */
+  justify-items: end;
 }
 
 .lado1_Mission{
@@ -421,5 +425,71 @@
 /* -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
 
+
+
+
+
+
+
+.seccion_lado1_oficina {
+  display: flex;
+  
+  background-image: linear-gradient(to right, rgb(0 0 0 / 0.1), rgb(0 0 0 / 0.1)),
+    url("../public/img/oficina.jpg");
+  background-size: cover;
+  height: 100%;
+  width: 60%;
+  position: relative;
+  margin-left: 3rem;
+  background-position: 30%;
+}
+
+.bordes {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border: 4px solid #d1af85;
+  margin: 2rem;
+}
+
+
+
+.lado1_mission {
+  display: flex;
+  background-image: linear-gradient(to right, rgb(0 0 0 / 0.2), rgb(0 0 0 / 0)),
+    url("../public/img/carro.png");
+  background-size: cover;
+  height: 100%;
+  width: 60%;
+  position: relative;
+  margin-right: 3rem;
+  justify-content: end;
+}
+
+
+
+
+
+
+.seccion_lado1_vission {
+  display: flex;
+  
+  background-image: linear-gradient(to right, rgb(0 0 0 / 0.1), rgb(0 0 0 / 0.1)),
+    url("../public/img/ourVission.webp");
+  background-size: cover;
+  height: 100%;
+  width: 60%;
+  position: relative;
+  margin-left: 3rem;
+  background-position: 30%;
+}
+
+.bordes {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border: 4px solid #d1af85;
+  margin: 2rem;
+}
 
 

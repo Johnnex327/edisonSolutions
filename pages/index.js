@@ -10,8 +10,12 @@ import Membresias from "../components/Membresias";
 import WeCanDo from "../components/WeCanDo";
 import Estados from "../components/Estados";
 import WhyPeopleChooseUs from "../components/WhyPeopleChooseUs";
+import DoYouKnowMembership from "../components/DoYouKnowMembership";
+import Boton from "../components/Boton";
 import { FeaturedProjects } from "../components/FeaturedProjects";
 import BtnWhatsappFlotante from "../components/BtnWhatsappFlotante";
+
+import { AiOutlineCheck } from "react-icons/ai";
 
 import Image from "next/image";
 
@@ -27,7 +31,6 @@ import "aos/dist/aos.css";
 
 
 
-
 export default function Home({ renovacion, construccion, electrical }) {
   useEffect(() => {
     AOS.init();
@@ -36,7 +39,7 @@ export default function Home({ renovacion, construccion, electrical }) {
   return (
     <Layout pagina="Home">
 
-      <BtnWhatsappFlotante/>
+      {/* <BtnWhatsappFlotante/> */}
 
       <div className={styles.fondo}>
         <Swiper
@@ -52,15 +55,122 @@ export default function Home({ renovacion, construccion, electrical }) {
             <section className={styles.banner1}>
               <div className={styles.centrar}>
                 <div className={styles.contenedor_central}>
-                  <div className={styles.contenedor_titulos}>
-                    <h1>"We repair your home quickly and professionally"</h1>
+                  {/*  <div className={styles.contenedor_titulos}>
+                    <h1>"YOUR IMAGINATION, OUR CREATIONS"</h1>
                     <h1>The best option for your home or bussiness</h1>
-                  </div>
+                  </div> */}
 
-                  <div>
-                    <button className={`${styles.btn} ${styles.btn_up}`}>
-                      CONTACT US
-                    </button>
+
+
+                  <div className={styles.container}>
+
+                    <h1>Save money on our home improvement plans with </h1>
+                    <h1>Edison solutions llc </h1>
+
+                    <div className={styles.container_menbresias}>
+                      <div className={styles.bronze}>
+                        <Image
+                          src={'/img/bronze.png'}
+                          width={'200px'}
+                          height={'200px'}
+                        />
+                        <h2>Bronze</h2>
+                        <ul>
+                          <div className={styles.container_opciones}>
+                            <AiOutlineCheck
+                              className={styles.iconos}
+                            />
+                            <li>x services per month</li>
+                          </div>
+
+                          <div className={styles.container_opciones}>
+                            <AiOutlineCheck
+                              className={styles.iconos}
+                            />
+                            <li>x services per month</li>
+                          </div>
+
+                          <div className={styles.container_opciones}>
+                            <AiOutlineCheck
+                              className={styles.iconos}
+                            />
+                            <li>x services per month</li>
+                          </div>
+
+
+                        </ul>
+                      </div>
+
+                      <div className={styles.silver}>
+                        <Image
+                          src={'/img/silver.png'}
+                          width={'200px'}
+                          height={'200px'}
+                        />
+                        <h2>Silver</h2>
+                        <ul>
+                          <div className={styles.container_opciones}>
+                            <AiOutlineCheck
+                              className={styles.iconos}
+                            />
+                            <li>x services per month</li>
+                          </div>
+
+                          <div className={styles.container_opciones}>
+                            <AiOutlineCheck
+                              className={styles.iconos}
+                            />
+                            <li>x services per month</li>
+                          </div>
+
+                          <div className={styles.container_opciones}>
+                            <AiOutlineCheck
+                              className={styles.iconos}
+                            />
+                            <li>x services per month</li>
+                          </div>
+                        </ul>
+                      </div>
+
+                      <div className={styles.gold}>
+                        <Image
+                          src={'/img/gold.png'}
+                          width={'200px'}
+                          height={'200px'}
+                        />
+                        <h2>Gold</h2>
+                        <ul>
+                          <div className={styles.container_opciones}>
+                            <AiOutlineCheck
+                              className={styles.iconos}
+                            />
+                            <li>x services per month</li>
+                          </div>
+
+                          <div className={styles.container_opciones}>
+                            <AiOutlineCheck
+                              className={styles.iconos}
+                            />
+                            <li>x services per month</li>
+                          </div>
+
+                          <div className={styles.container_opciones}>
+                            <AiOutlineCheck
+                              className={styles.iconos}
+                            />
+                            <li>x services per month</li>
+                          </div>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div className={styles.container_boton}>
+                      <Boton
+                        text={'MORE INFO'}
+                      />
+                    </div>
+
+
                   </div>
                 </div>
               </div>
@@ -185,11 +295,7 @@ export default function Home({ renovacion, construccion, electrical }) {
         <div className={`${styles.contenedor_fondo3} contenedor_principal`}>
           <h2>EXPERIENCE</h2>
           <div className={styles.division}>
-            <div
-              data-aos="fade-down"
-              data-aos-duration="1000"
-              className={styles.lado1}
-            >
+            <div data-aos="fade-down" data-aos-duration="1000" className={styles.lado1}>
               <h1>EXPERIENCED FOR THE JOB</h1>
               <p>
                 A small river named Duden flows by their place and supplies it
@@ -201,20 +307,26 @@ export default function Home({ renovacion, construccion, electrical }) {
                 far World of Grammar.
               </p>
             </div>
+
+            <div className={styles.lado2}>
+
+            </div>
           </div>
         </div>
       </div>
-      
+
 
       {/* <Team_Work></Team_Work> */}
 
       {/* <FeaturedProjects/> */}
 
-      <WhyPeopleChooseUs/>
+      <WhyPeopleChooseUs />
 
-      <Estados/>
-      
-      
+      <DoYouKnowMembership />
+
+      <Estados />
+
+
     </Layout>
   );
 }

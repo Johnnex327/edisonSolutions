@@ -36,7 +36,7 @@
 
 .contenedor{
   width: 100%;
-  height: 170rem;
+  height: fit-content;
   /* border: 3px solid green; */
   margin: 7rem 0;
   color: gray;

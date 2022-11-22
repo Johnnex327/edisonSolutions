@@ -32,14 +32,14 @@ const About = ({ resultado }) => {
 
   return (
     <Layout pagina="About Us">
-  
+
       <div className={styles.fondo_about_us}>
         <div className={styles.titulo}>
           <h1>
             ABOUT <span>US</span>
           </h1>
           <p className={frase ? `${styles.mostrar}` : `${styles.ocultar}`}>
-          We are a company specialized in building, remodeling and maintaining your home, business or project.
+            We are a company specialized in building, remodeling and maintaining your home, business or project.
           </p>
         </div>
       </div>
@@ -50,10 +50,10 @@ const About = ({ resultado }) => {
         <h1>General Home Improvement Contractors</h1>
       </div>
 
-      
+
 
       <div className={styles.contenedor_OurMissionVission}>
-        
+
         <div className={styles.lado2_Vission}>
           <h1>ABOUT US</h1>
           <h2>WE KNOW</h2>
@@ -69,8 +69,16 @@ const About = ({ resultado }) => {
             viverra.
           </p>
         </div>
-        
-        <div className={styles.fondoAttachment}></div>
+
+        {/* <div className={styles.fondoAttachment}></div> */}
+
+        <div
+          data-aos="fade-right"
+          data-aos-duration="1000"
+          className={styles.seccion_lado1_oficina}
+        >
+          <div className={styles.bordes}></div>
+        </div>
 
       </div>
 
@@ -99,16 +107,18 @@ const About = ({ resultado }) => {
             World of Grammar.
           </p>
 
-          
+
         </div>
       </div>
 
-      <div className={styles.contenedor_OurMissionVission}>
+      <div className={styles.contenedor_OurMissionVission2}>
         <div
-          data-aos="fade-right"
+          data-aos="fade-left"
           data-aos-duration="1000"
-          className={styles.lado1_Mission}
-        ></div>
+          className={styles.lado1_mission}
+        >
+          <div className={styles.bordes}></div>
+        </div>
 
         <div className={styles.lado2_Mission}>
           <h1>OUR VALUE</h1>
@@ -145,10 +155,12 @@ const About = ({ resultado }) => {
         </div>
 
         <div
-          data-aos="fade-left"
+          data-aos="fade-right"
           data-aos-duration="1000"
-          className={styles.lado1_Vission}
-        ></div>
+          className={styles.seccion_lado1_vission}
+        >
+          <div className={styles.bordes}></div>
+        </div>
       </div>
 
 
@@ -216,8 +228,8 @@ const About = ({ resultado }) => {
         </SwiperSlide>
       </Swiper>
 
-     <Formulario_Contacto/>
-     
+      {/* <Formulario_Contacto /> */}
+
     </Layout>
   );
 };

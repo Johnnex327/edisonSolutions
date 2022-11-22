@@ -11,6 +11,9 @@ import ReactPlayer from "react-player";
 import { FaFacebookSquare } from "react-icons/fa";
 import { FaInstagramSquare } from "react-icons/fa";
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 const Gallery = () => {
   let imagenes = [
     require("../public/img/gallery/1.jpg"),
@@ -42,9 +45,14 @@ const Gallery = () => {
     setRenderVideo(true);
   });
 
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
     <Layout pagina="Gallery">
-      <BtnWhatsappFlotante />
+
+      {/* <BtnWhatsappFlotante/> */}
 
       <div className={styles.fondo_gallery}>
         <div className={styles.titulo}>
@@ -65,17 +73,20 @@ const Gallery = () => {
         <div className={styles.fila}>
           {imagenes.map((imagen, index) => {
             return (
-              <div key={index} className={styles.container_image}>
+              <div className={styles.container_image}
+              data-aos="fade-right"
+              data-aos-duration="1000"
+              >
                 <Image
-                  key={index}
-                  src={imagen}
-                  width={1024}
-                  height={1080}
-                  alt="Imagen"
-                  priority
-                  className={styles.imagen}
-                />
+                key={index}
+                src={imagen}
+                width={1024}
+                height={1080}
+                alt="Imagen"
+                priority
+              />
               </div>
+              
             );
           })}
         </div>
@@ -160,28 +171,28 @@ const Gallery = () => {
                   url="https://www.facebook.com/100320772656843/videos/546197943578307"
                   width="100%"
                   height="100%"
+                  
                 />
+              </div>
+              
+
+              <div className={styles.follow_us}>
+                <h2><span>More Content?</span></h2>
+                <h2>Follow in our <span>Social Networks</span></h2>
+                <div className={styles.container_iconos}>
+                  <FaFacebookSquare
+                    className={`${styles.icono} ${styles.facebook}`}
+                  />
+
+                  <FaInstagramSquare
+                    className={`${styles.icono} ${styles.instagram}`}
+                  />
+                </div>
               </div>
             </div>
           </div>
         </>
       )}
-
-      <div className={styles.follow_us}>
-        <h2>
-          <span>More Content?</span>
-        </h2>
-        <h2>
-          Follow us in our <span>Social Networks</span>
-        </h2>
-        <div className={styles.container_iconos}>
-          <FaFacebookSquare className={`${styles.icono} ${styles.facebook}`} />
-
-          <FaInstagramSquare
-            className={`${styles.icono} ${styles.instagram}`}
-          />
-        </div>
-      </div>
     </Layout>
   );
 };

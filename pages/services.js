@@ -8,6 +8,10 @@ import { FaPhoneSquare } from "react-icons/fa";
 import Boton from "../components/Boton";
 
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+
 import BtnWhatsappFlotante from "../components/BtnWhatsappFlotante";
 
 const Services = () => {
@@ -19,10 +23,14 @@ const Services = () => {
     }, 1000);
   });
 
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
     <Layout pagina="Services">
 
-      <BtnWhatsappFlotante/>
+      {/* <BtnWhatsappFlotante/> */}
 
       <div className={styles.fondo_services}>
         <div className={styles.titulo}>
@@ -43,7 +51,8 @@ const Services = () => {
           </div>
           <h1>RENOVATIONS</h1>
 
-          <div className={styles.fila}>
+          <div className={styles.fila} data-aos="fade-up"
+          data-aos-duration="1000">
             <div>
               <div className={`${styles.columna} ${styles.kitchen}`}>
                 <div className={styles.contenido}>
@@ -100,7 +109,8 @@ const Services = () => {
             </div>
           </div>
 
-          <div className={styles.fila}>
+          <div className={styles.fila} data-aos="fade-down"
+          data-aos-duration="1000">
             <div>
               <div className={`${styles.columna} ${styles.bussiness}`}>
                 <div className={styles.contenido}>
@@ -130,7 +140,9 @@ const Services = () => {
 
           <h1>MASONRY</h1>
 
-          <div className={styles.fila}>
+          <div className={styles.fila}
+            data-aos="fade-up"
+            data-aos-duration="1000">
             <div>
               <div className={`${styles.columna} ${styles.paint}`}>
                 <div className={styles.contenido}>
@@ -184,7 +196,8 @@ const Services = () => {
             </div>
           </div>
 
-          <div className={styles.fila}>
+          <div className={styles.fila} data-aos="fade-down"
+          data-aos-duration="1000">
             <div>
               <div className={`${styles.columna} ${styles.newFlooring}`}>
                 <div className={styles.contenido}>
@@ -232,7 +245,8 @@ const Services = () => {
 
           <h1>ELECTRICAL</h1>
 
-          <div className={styles.fila}>
+          <div className={styles.fila} data-aos="fade-up"
+          data-aos-duration="1000">
             <div>
               <div
                 className={`${styles.columna} ${styles.electricalInstallation}`}
@@ -291,6 +305,7 @@ const Services = () => {
           </div>
 
         </div>
+
         <Formulario_Contacto />
       </div>
     </Layout>

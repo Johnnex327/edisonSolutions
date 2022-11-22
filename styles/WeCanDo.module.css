@@ -2,6 +2,7 @@
   display: flex;
   width: 100%;
   margin: 5rem 0;
+  font-family: 'oswald', sans-serif;
 }
 
 .seccion {
@@ -36,8 +37,7 @@
   margin: 0 auto;
   width: 100%;
   justify-content: center;
-  font-family: var(--fuente-secundaria);
-  font-size: large;
+ 
   
 }
 
@@ -52,7 +52,7 @@
 .contenido_lado2 p {
   text-align: justify;
   width: 60%;
-  font-style: italic;
+
   line-height: 2;
   
 }
@@ -60,9 +60,7 @@
 .contenido_lado2 h2 {
   color: #d1af85;
   font-size: 2rem;
-  font-style: oblique;
-  padding: 0;
-  margin: 0;
+  
  
 }
 
@@ -116,8 +114,7 @@
   width: 90%;
   justify-content: center;
   align-items: flex-start;
-  font-family: var(--fuente-We-Can-Do);
-  font-size: large;
+  font-family: 'oswald', sans-serif;
 
 }
 
@@ -132,14 +129,14 @@
 .contenido_seccion_lado2 p {
   text-align: justify;
   width: 60%;
-  font-style: oblique;
+
   line-height: 2;
 }
 
 .contenido_seccion_lado2 h2 {
   color: #d1af85;
   font-size: 2rem;
-  font-style: oblique;
+  
   padding: 0;
   margin: 0;
 }

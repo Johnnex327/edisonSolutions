@@ -1,0 +1,100 @@
+.fondo{
+    display: flex;
+    padding: 3rem;
+    background-color: rgb(234, 245, 255);
+}
+
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height: auto;
+    /* background-color: green; */
+    margin: auto;
+    font-family: 'oswald', sans-serif;
+    
+}
+
+.container h1{
+    text-transform: uppercase;
+    text-align: center;
+}
+
+
+
+.container_menbresias{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    height: auto;
+    justify-items: center;
+}
+
+.container_menbresias li{
+    text-transform: lowercase;
+    list-style: none;
+}
+
+.bronze{
+    text-transform: uppercase;
+    text-align: center;
+    
+}
+
+.silver{
+    text-transform: uppercase;
+    text-align: center;
+    
+}
+
+.gold{
+    text-transform: uppercase;
+    text-align: center;
+}
+
+
+.container_boton{
+    width: fit-content;
+    height: auto;
+    margin: auto;
+   
+}
+
+.bronze img:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition-duration: .5s;
+    color: var(--titulos);
+    
+}
+
+.silver img:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition-duration: .5s;
+    color: var(--titulos);
+    
+}
+
+.gold img:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition-duration: .5s;
+    color: var(--titulos);
+}
+
+
+.container_opciones{
+    display: flex;
+  
+  }
+  
+  .iconos{
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    color: green;
+    
+  }

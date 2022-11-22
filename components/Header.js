@@ -28,7 +28,7 @@ const Header = () => {
     <>
       {/* open ? `${styles.header}` : `${styles.header} ${styles.header_menu_mobile}` */}
       <header
-        className={color ? `${styles.header} ${styles.bg}` : `${styles.header}`}
+        className={color ? `${styles.header} ${styles.bg}` : `${styles.header}` }
       >
         <div className={styles.logo}>
           <Link href="/">
