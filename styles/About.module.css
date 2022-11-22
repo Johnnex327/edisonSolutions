@@ -38,6 +38,10 @@
     transition-duration: 2s;
   }
 
+  .mostrar::selection{
+    background-color: #d1af85;
+  }
+
 .fondo_about_us {
     background-image: linear-gradient(
         to right,

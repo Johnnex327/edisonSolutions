@@ -28,6 +28,7 @@ import { EffectFade, Navigation, Pagination } from "swiper";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
+import OurServices from "../components/OurServices";
 
 
 
@@ -73,6 +74,7 @@ export default function Home({ renovacion, construccion, electrical }) {
                           src={'/img/bronze.png'}
                           width={'200px'}
                           height={'200px'}
+                          alt='bronze'
                         />
                         <h2>Bronze</h2>
                         <ul>
@@ -106,6 +108,7 @@ export default function Home({ renovacion, construccion, electrical }) {
                           src={'/img/silver.png'}
                           width={'200px'}
                           height={'200px'}
+                          alt='silver'
                         />
                         <h2>Silver</h2>
                         <ul>
@@ -137,6 +140,7 @@ export default function Home({ renovacion, construccion, electrical }) {
                           src={'/img/gold.png'}
                           width={'200px'}
                           height={'200px'}
+                          alt='gold'
                         />
                         <h2>Gold</h2>
                         <ul>
@@ -193,6 +197,8 @@ export default function Home({ renovacion, construccion, electrical }) {
         </Swiper>
       </div>
 
+      <OurServices/>
+
       <Swiper
         spaceBetween={30}
         effect={"fade"}
@@ -219,6 +225,8 @@ export default function Home({ renovacion, construccion, electrical }) {
           </div>
         </SwiperSlide>
       </Swiper>
+
+      
 
       <div className={styles.division}>
         <div className={styles.fondo_roofing}>

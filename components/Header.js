@@ -75,7 +75,7 @@ const Header = () => {
           <div className={styles.barraNavegacion}>
             <ul>
               <div className={styles.elementos}>
-                <li>
+                <li className={styles.barras}>
                   <Link href="/">Home</Link>
                 </li>
                 <li>

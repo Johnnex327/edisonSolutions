@@ -1,8 +1,9 @@
 import React from 'react'
 import styles from '../styles/DoYouKnowMembership.module.css'
 
-import Image from 'next/Image';
+import Image from 'next/image';
 import Boton from './Boton';
+
 
 import { AiOutlineCheck } from "react-icons/ai";
 
@@ -20,6 +21,7 @@ const DoYouKnowMembership = () => {
                             src={'/img/bronze.png'}
                             width={'200px'}
                             height={'200px'}
+                            alt='bronze'
                         />
                         <h2>Bronze</h2>
                         <ul>
@@ -53,6 +55,7 @@ const DoYouKnowMembership = () => {
                             src={'/img/silver.png'}
                             width={'200px'}
                             height={'200px'}
+                            alt='silver'
                         />
                         <h2>Silver</h2>
                         <ul>
@@ -84,6 +87,7 @@ const DoYouKnowMembership = () => {
                             src={'/img/gold.png'}
                             width={'200px'}
                             height={'200px'}
+                            alt='gold'
                         />
                         <h2>Gold</h2>
                         <ul>

@@ -121,7 +121,7 @@
   width: 100%;
   background-size: cover;
   background-position: 50%;
-  
+  font-family: 'oswald', sans-serif;
   /* background-color: red; */
 }
 
@@ -138,6 +138,7 @@
   width: 100%;
   background-size: cover;
   background-position: 50%;
+  font-family: 'oswald', sans-serif;
 }
 
 
@@ -158,6 +159,25 @@
 
 .contenedor_servicios_electrical h1{
   color: #C2965F;
+}
+
+.titulo_pagina h1{
+  font-family: 'oswald', sans-serif;
+  text-transform: uppercase;
+}
+
+.barra{
+  display: flex;
+  justify-content: center;
+}
+
+.barra h1{
+  
+  width: fit-content;
+  border-bottom: 5px solid var(--titulos);
+  padding: 2rem;
+  padding-bottom: .5rem;
+  
 }
 
 .border{

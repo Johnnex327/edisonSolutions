@@ -14,9 +14,13 @@ const Renovacion = ({ renovacion, titulo }) => {
   return (
     <>
       <div className={`${styles.contenedor_servicios_renovacion}`}>
-        <div className={styles.titulo_renovaciones}>
+        {/* <div className={styles.titulo_renovaciones}>
           <h1>{titulo}</h1>
-        </div>
+        </div> */}
+
+      <div className={`${styles.titulo_pagina} ${styles.barra}`}>
+        <h1>{titulo}</h1>
+      </div>
 
         <div className={styles.contenedor_renovaciones}>
           {renovacion.map((entrada) => (

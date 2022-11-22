@@ -8,8 +8,6 @@ import Image from "next/image";
 import ReactPlayer from "react-player";
 /* import video1 from "../public/img/video/1.mp4"; */
 
-import { FaFacebookSquare } from "react-icons/fa";
-import { FaInstagramSquare } from "react-icons/fa";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -43,7 +41,7 @@ const Gallery = () => {
     }, 1000);
 
     setRenderVideo(true);
-  });
+  }, []);
 
   useEffect(() => {
     AOS.init();
@@ -76,6 +74,7 @@ const Gallery = () => {
               <div className={styles.container_image}
               data-aos="fade-right"
               data-aos-duration="1000"
+              key={index}
               >
                 <Image
                 key={index}
