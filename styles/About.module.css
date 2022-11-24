@@ -439,7 +439,7 @@
   display: flex;
   
   background-image: linear-gradient(to right, rgb(0 0 0 / 0.1), rgb(0 0 0 / 0.1)),
-    url("../public/img/oficina.jpg");
+    url("../public/img/acerca.jpg");
   background-size: cover;
   height: 100%;
   width: 60%;

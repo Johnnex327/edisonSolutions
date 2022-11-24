@@ -28,7 +28,7 @@
   width: 100%;
   height: 100%;
   position: absolute;
-  border: 4px solid #d1af85;
+  border: 4px solid var(--titulos);
   margin: 2rem;
 }
 

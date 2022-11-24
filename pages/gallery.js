@@ -9,6 +9,11 @@ import ReactPlayer from "react-player";
 /* import video1 from "../public/img/video/1.mp4"; */
 
 
+import { FaFacebookSquare } from "react-icons/fa";
+import { FaTwitterSquare } from "react-icons/fa";
+import { FaInstagramSquare } from "react-icons/fa";
+
+
 import AOS from "aos";
 import "aos/dist/aos.css";
 

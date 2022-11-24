@@ -19,9 +19,11 @@ const Construccion = ({ construccion, titulo }) => {
           data-aos-easing="ease-in-sine" */
         className={`${styles.contenedor_servicios_construccion}`}
       >
-        <div className={`${styles.titulo_pagina} ${styles.barra}`}>
-        <h1>{titulo}</h1>
-      </div>
+       <div className={styles.titulo_pagina}>
+          <div className={styles.barra}>
+            <h1>{titulo}</h1>
+          </div>
+        </div>
 
         <div className={styles.contenedor_construccion}>
           {construccion.map((entrada) => (

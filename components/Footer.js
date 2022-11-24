@@ -38,9 +38,11 @@ const Footer = () => {
           <div>
             <h2>Services</h2>
             <p>Construction</p>
-            <p>Electrical</p>
-            <p>Cleaning Service</p>
+            <p>Electrical Services</p>
+            <p>Basement</p>
             <p>Renovation</p>
+            <p>Flooring</p>
+
           </div>
 
           <div className={styles.redes_container}>

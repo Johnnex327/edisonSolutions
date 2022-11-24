@@ -28,27 +28,33 @@ const Header = () => {
     <>
       {/* open ? `${styles.header}` : `${styles.header} ${styles.header_menu_mobile}` */}
       <header
-        className={color ? `${styles.header} ${styles.bg}` : `${styles.header}` }
+        className={color ? `${styles.header} ${styles.bg}` : `${styles.header}`}
       >
         <div className={styles.logo}>
-          <Link href="/">
-            <div>
-              <Image
-                width={100}
-                height={60}
-                layout="fixed"
-                src="/img/logo.png"
-                alt="logo"
-              />
-            </div>
-          </Link>
+          <div>
+            <Link href="/">
+              <div>
+                <Image
+                  width={150}
+                  height={100}
+                  layout="fixed"
+                  src="/img/logo.png"
+                  alt="logo"
+                />
+              </div>
+            </Link>
+          </div>
+
 
           <div className={styles.nombre_empresa}>
-            <Link href="/">
-              <h1>Edison Solutions LLC</h1>
-            </Link>
-            <p>General Home Improvement Contractors</p>
+            <div className={styles.caja_eslogan}>
+              <Link href="/">
+                <h1>Edison Solutions LLC</h1>
+              </Link>
+              <p>Home Improvement Contractors</p>
+            </div>
           </div>
+
         </div>
 
         {color && (

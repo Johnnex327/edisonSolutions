@@ -130,8 +130,7 @@
 }
 
 .contenedor_servicios_construccion {
-  background-image: 
-    url("../public/img/background.jpg");
+  
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -147,37 +146,48 @@
 }
 
 .contenedor_servicios_electrical {
-  background-image: 
-    url("../public/img/background.jpg");
+ /*  background-image: 
+    url("../public/img/background.jpg"); */
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
   background-size: cover;
   background-position: 50%;
+  font-family: 'oswald', sans-serif;
 }
 
 .contenedor_servicios_electrical h1{
   color: #C2965F;
 }
 
-.titulo_pagina h1{
+
+.titulo_pagina {
+  display: flex;
+  width: 60%;
+  margin: auto;
+  justify-content: center;
+  background-color: #ffff;
+  margin-top: 2rem;
+}
+
+.titulo_pagina h1 {
   font-family: 'oswald', sans-serif;
   text-transform: uppercase;
 }
 
-.barra{
+.barra {
   display: flex;
   justify-content: center;
+  width: 100%;
+  padding: 0 8rem;
+  
 }
 
-.barra h1{
-  
+.barra h1 {
+
   width: fit-content;
-  border-bottom: 5px solid var(--titulos);
-  padding: 2rem;
-  padding-bottom: .5rem;
-  
+  color: var(--titulos);
 }
 
 .border{
@@ -224,11 +234,21 @@
   /* background-color: #1c1c1c; */
 }
 
+.container_descripcion{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  /* background-color: #f7f7f7; */
+ 
+}
+
 .descripcion {
 
   display: flex;
   flex-direction: column;
   max-width: fit-content;
+  background-color: #f7f7f7;
+  padding: 1rem;
 }
 
 .descripcion p{
@@ -237,12 +257,12 @@
   color: var(--titulos);
   
   line-height: 1.5;
-  color: darkgrey;
+  color: #222222;
 }
 
 .descripcion h2{
   text-align: center;
-
+  color: var(--titulos);
  
 }
 
@@ -332,6 +352,7 @@
   border-radius: 10px;
   /* background-color: #C2965F; */
   align-items: center;
+  background-color: #f7f7f7;
 }
 
 
@@ -341,7 +362,7 @@
       rgb(0 0 0 / 0.7),
       rgb(0 0 0 / 0.7)
     ),
-    url("../public/img/fondo3.jpg");
+    url("../public/img/banner3.webp");
   background-size: cover;
   background-position: 50%;
   /* padding: 5rem 0; */
@@ -489,7 +510,7 @@
   align-items: center;
 }
 
-.barra{
+.barra_handyman{
   width: 80%;
   border-bottom: 2px solid aliceblue;
   margin-bottom: 3rem;
@@ -745,3 +766,21 @@
 
 
 /* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+.opacidad{
+  width: 100%;
+  height: 100%;
+
+}
+
+.opacidad:hover{
+  background: rgb(0 0 0 / 0.6);
+  transition-duration: 1s;
+  opacity: 1;
+}
+
+.btn:hover{
+  cursor: pointer;
+  
+}

@@ -1,9 +1,10 @@
 .header {
   background-color: transparent;
-  height: 100px;
+  height: auto;
   padding: 1rem;
   color: aliceblue;
   position: relative;
+  /* background-color: #d1af85; */
 }
 
 .bg{
@@ -16,7 +17,11 @@
 }
 .logo {
   display: flex;
+  flex-direction: row;
+  /* background-color: #25D366; */
+  height: 100%;
   width: fit-content;
+  align-items: center; /* editar aqui */
 }
 
 .elementos {
@@ -25,18 +30,33 @@
 }
 
 .nombre_empresa {
+  display: flex;
+  flex-direction: column;
   margin-bottom: 0;
   padding-top: 0;
 }
 
 .nombre_empresa h1 {
-  padding-bottom: 0;
   margin-bottom: 0;
+  padding-top: 0;
+  font-family: 'oswald', sans-serif;
+  /* font-size: 45px; */
 }
 
 .nombre_empresa p {
   text-align: center;
   margin: 0;
+}
+
+
+.caja_eslogan{
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  height: auto;
+  font-size: 20px;
+  /* background-color: blue; */
+
 }
 
 .contenedor_icono{
@@ -58,11 +78,12 @@
   top: 0;
   left: 0;
   width: 100%;
+  height: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
   transition: 1s;
-  padding: 15px 100px;
+  padding: 0px 100px;
   z-index: 100000;
   opacity: 0.9;
 }

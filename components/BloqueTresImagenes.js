@@ -1,4 +1,4 @@
-import { React, useEffect} from "react";
+import { React, useEffect } from "react";
 import styles from "../styles/Home.module.css";
 
 import AOS from "aos";
@@ -23,36 +23,37 @@ const BloqueTresImagenes = ({ entrada }) => {
         data-aos-duration="500"
         className={styles.seccion}
       >
-        <div className={styles.contenido_imagen}>
-          {/* <div>
+        <div className={styles.opacidad}>
+          <div className={styles.contenido_imagen}>
+
+          <div>
           <button className={`${styles.btn} ${styles.btn_up}`}>
-            See More
+            Get quote
           </button>
-          </div> */}
+          </div>
         </div>
+        </div>
+
+        
 
         <style jsx>{`
           section {
             background-image: url(${imagen.url});
             background-size: cover;
-            width: 300px;
-            height: 200px;
+            width: 100%;
+            height: 250px;
           }
-          section:hover {
-            background-image: linear-gradient(
-                to right,
-                rgb(0 0 0 / 0.5),
-                rgb(0 0 0 / 0.5)
-              ),
-              url(${imagen.url});
-          }
+          
         `}</style>
       </section>
 
-      <div className={styles.descripcion}>
-        <h2>{entrada.titulo}</h2>
-        <p>{entrada.descripcion}</p>
+      <div className={styles.container_descripcion}>
+        <div className={styles.descripcion}>
+          <h2>{entrada.titulo}</h2>
+          <p>{entrada.descripcion}</p>
+        </div>
       </div>
+
     </div>
   );
 };

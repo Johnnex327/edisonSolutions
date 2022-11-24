@@ -92,7 +92,7 @@ const Services = () => {
                   </p>
                 </div>
               </div>
-              <h2>Bed Room</h2>
+              <h2>Bedroom</h2>
             </div>
 
             <div>
@@ -105,7 +105,7 @@ const Services = () => {
                   </p>
                 </div>
               </div>
-              <h2>Bath Room</h2>
+              <h2>Bathroom</h2>
             </div>
           </div>
 
@@ -121,7 +121,7 @@ const Services = () => {
                   </p>
                 </div>
               </div>
-              <h2>Bussiness</h2>
+              <h2>Offices</h2>
             </div>
 
             <div>
@@ -287,6 +287,20 @@ const Services = () => {
               </div>
               <h2>Ilumination</h2>
             </div>
+
+            <div>
+              <div className={`${styles.columna} ${styles.generalWiring}`}>
+                <div className={styles.contenido}>
+                  <p>
+                    Etiam turpis mauris, imperdiet vel molestie a, feugiat eget
+                    elit. Aenean in nisl blandit, dignissim ex id, pharetra
+                    metus.
+                  </p>
+                </div>
+              </div>
+              <h2>General Wiring</h2>
+            </div>
+            
           </div>
 
           <div className={styles.contenedor_need_sevices}>

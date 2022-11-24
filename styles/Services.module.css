@@ -146,10 +146,6 @@
   color: aliceblue;
 }
 
-.contenido:hover{
-  opacity: 1;
-  transition-duration: 2s;
-}
 
 .kitchen{
   background-image: url("../public/img/services/kitchenRenovation.jpg");
@@ -161,6 +157,7 @@
   background: rgb(0 0 0 / 0.8);
   transition-duration: .5s;
   cursor: pointer;
+  opacity: 1;
 }
 
 .livingRoom{
@@ -235,6 +232,11 @@
 
 .ilumination{
   background-image: url("../public/img/services/ilumination.jpg");
+  background-size: cover;
+}
+
+.generalWiring{
+  background-image: url("../public/img/services/generalWiring.jpg");
   background-size: cover;
 }
 

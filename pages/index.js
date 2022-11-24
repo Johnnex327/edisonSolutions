@@ -29,6 +29,7 @@ import { EffectFade, Navigation, Pagination } from "swiper";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import OurServices from "../components/OurServices";
+import ClientsCompany from "../components/ClientsCompany";
 
 
 
@@ -197,7 +198,7 @@ export default function Home({ renovacion, construccion, electrical }) {
         </Swiper>
       </div>
 
-      <OurServices/>
+
 
       <Swiper
         spaceBetween={30}
@@ -226,12 +227,12 @@ export default function Home({ renovacion, construccion, electrical }) {
         </SwiperSlide>
       </Swiper>
 
-      
+
 
       <div className={styles.division}>
         <div className={styles.fondo_roofing}>
           <div className={styles.handymanContainer}>
-            <div className={styles.barra}>
+            <div className={styles.barra_handyman}>
               <h1>Do you need a Handyman services?</h1>
             </div>
 
@@ -330,7 +331,14 @@ export default function Home({ renovacion, construccion, electrical }) {
 
       <WhyPeopleChooseUs />
 
-      <DoYouKnowMembership />
+      {/* <DoYouKnowMembership /> */}
+
+
+      <OurServices />
+
+      <ClientsCompany
+      
+      />
 
       <Estados />
 

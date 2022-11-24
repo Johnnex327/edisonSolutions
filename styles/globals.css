@@ -12,6 +12,7 @@
   --fuente-principal: 'Outfit', sans-serif;
   --fuente-We-Can-Do: "Gemunu", sans serif;
   --fuente-secundaria: "Oswaldo", sans serif;
+  --azuloscuro: #293b51;
 }
 
 html,
@@ -39,7 +40,7 @@ a {
   }
   body {
     color: black;
-    background: #f0f8ff;
+    background: #ffffff;
   }
 }
 
