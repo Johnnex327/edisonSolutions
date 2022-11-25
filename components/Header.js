@@ -49,7 +49,7 @@ const Header = () => {
           <div className={styles.nombre_empresa}>
             <div className={styles.caja_eslogan}>
               <Link href="/">
-                <h1>Edison Solutions LLC</h1>
+                <h1>EDISON SOLUTIONS LLC</h1>
               </Link>
               <p>Home Improvement Contractors</p>
             </div>
